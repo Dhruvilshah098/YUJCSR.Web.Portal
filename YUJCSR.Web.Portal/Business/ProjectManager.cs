@@ -55,9 +55,5 @@ namespace YUJCSR.Web.CSO.BusinessManager
 				throw;
 			}
 		}
-
-
-
-
 	}
 }
