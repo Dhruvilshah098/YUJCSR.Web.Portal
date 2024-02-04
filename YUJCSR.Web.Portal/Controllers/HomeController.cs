@@ -33,6 +33,19 @@ namespace YUJCSR.Web.Portal.Controllers
             return View();
         }
 
+        public IActionResult Impact()
+        {
+            return View();
+        }
+        public IActionResult CSO()
+        {
+            return View();
+        }
+        public IActionResult Companies()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

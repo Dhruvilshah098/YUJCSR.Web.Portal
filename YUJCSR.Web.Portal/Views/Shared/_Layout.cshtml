@@ -36,15 +36,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="" asp-action="">Impact</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Impact">Impact</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="" asp-action="">CSO</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CSO">CSO</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="" asp-action="">Companies</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Companies">Companies</a>
                         </li>
 
                         <li class="nav-item">
@@ -61,8 +61,8 @@
                     <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <div class="modal-body">
-                                    <h3>Login as</h3>
+                                <div class="modal-body p-4">
+                                    <h3 class="mb-2">Login as</h3>
 
                                     <div class="d-flex">
                                         <div class="form-check pl-0">
@@ -75,6 +75,12 @@
                                             <input class="form-check-input ml-0" type="radio" name="flexRadioDefault" id="cso" onclick="redirectToWebsite('https://example1.com')">
                                             <label class="form-check-label pl-4" for="cso">
                                                 CSO
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input ml-0" type="radio" name="flexRadioDefault" id="admin" onclick="redirectToWebsite('https://example2.com')">
+                                            <label class="form-check-label pl-4" for="cso">
+                                                Yujcsr staff
                                             </label>
                                         </div>
                                     </div>
@@ -86,8 +92,8 @@
                     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <div class="modal-body">
-                                    <h3>Register as</h3>
+                                <div class="modal-body p-4">
+                                    <h3 class="mb-2">Register as</h3>
 
                                     <div class="d-flex">
                                         <div class="form-check pl-0">
@@ -100,6 +106,12 @@
                                             <input class="form-check-input ml-0" type="radio" name="flexRadioDefault" id="cso" onclick="redirectToWebsite('https://example1.com')">
                                             <label class="form-check-label pl-4" for="cso">
                                                 CSO
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input ml-0" type="radio" name="flexRadioDefault" id="admin" onclick="redirectToWebsite('https://example2.com')">
+                                            <label class="form-check-label pl-4" for="cso">
+                                                Yujcsr staff
                                             </label>
                                         </div>
                                     </div>

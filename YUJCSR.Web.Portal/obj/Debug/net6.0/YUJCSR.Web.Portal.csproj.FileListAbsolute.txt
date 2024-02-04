@@ -1427,3 +1427,4 @@ C:\Users\shahn\OneDrive\Documents\GitHub\YUJCSR.Web.Portal\YUJCSR.Web.Portal\obj
 C:\Users\shahn\OneDrive\Documents\GitHub\YUJCSR.Web.Portal\YUJCSR.Web.Portal\obj\Debug\net6.0\YUJCSR.Web.Portal.pdb
 C:\Users\shahn\OneDrive\Documents\GitHub\YUJCSR.Web.Portal\YUJCSR.Web.Portal\obj\Debug\net6.0\YUJCSR.Web.Portal.genruntimeconfig.cache
 C:\Users\shahn\OneDrive\Documents\GitHub\YUJCSR.Web.Portal\YUJCSR.Web.Portal\obj\Debug\net6.0\ref\YUJCSR.Web.Portal.dll
+C:\Users\shahn\OneDrive\Documents\GitHub\YUJCSR.Web.Portal\YUJCSR.Web.Portal\obj\Debug\net6.0\YUJCSR.Web.Portal.sourcelink.json
