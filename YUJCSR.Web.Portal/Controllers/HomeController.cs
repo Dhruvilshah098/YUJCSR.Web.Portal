@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using YUJCSR.Web.Portal.Business;
+using YUJCSR.Web.CSO.BusinessManager;
 using YUJCSR.Web.Portal.Models;
 
 namespace YUJCSR.Web.Portal.Controllers
@@ -8,18 +8,21 @@ namespace YUJCSR.Web.Portal.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        IConfiguration _config;
+        
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IConfiguration iConfig)
         {
             _logger = logger;
+            _config = iConfig;
         }
 
         public async Task<IActionResult> Index()
         {
-            ProjectManager obj = new ProjectManager();
-            var list = obj.GetProjects().Take(3);
-            //var list = (APIResponse)data.Result;
-            ViewBag.Projects = list;
+            ProjectManager manager = new ProjectManager(_config);
+            var data = manager.GetProjects().Take(3);
+
+            ViewBag.Projects = data;
             return View();
         }
 

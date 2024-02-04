@@ -10,7 +10,7 @@
         public string? ProjectDescription { get; set; }
         public string? Location { get; set; }
         public decimal? TotalBudget { get; set; }
-        public Int32? DurationInMonths { get; set; }
+        public decimal? DurationInMonths { get; set; }
         public decimal? ExpectedOutcome { get; set; }
         public string? Amenities { get; set; }
         public string? Experts { get; set; }
