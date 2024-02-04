@@ -42,18 +42,18 @@ namespace YUJCSR.Web.Portal.Controllers
         }
         public IActionResult CSO()
         {
-            CSOManager obj = new CSOManager();
-            var list = obj.GetProjects();
+            CSOManager obj = new CSOManager(_config);
+            var list = obj.GetCSO();
             //var list = (APIResponse)data.Result;
-            ViewBag.Projects = list;
+            ViewBag.CSO = list;
             return View();
         }
         public IActionResult Companies()
         {
-            CompanyManager obj = new CompanyManager();
-            var list = obj.GetProjects();
-            //var list = (APIResponse)data.Result;
-            ViewBag.Projects = list;
+            //CompanyManager obj = new CompanyManager();
+            //var list = obj.GetProjects();
+            ////var list = (APIResponse)data.Result;
+            //ViewBag.Projects = list;
             return View();
         }
 
