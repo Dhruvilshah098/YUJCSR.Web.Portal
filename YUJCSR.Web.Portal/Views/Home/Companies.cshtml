@@ -1,7 +1,54 @@
-﻿@{
+﻿@using YUJCSR.Web.Portal.Models
+
+@{
     Layout = "_Layout";
 }
-
+@{
+    var cso = ViewBag.CSO;
+}
 <section>
-    Companies page
+    <div class="project-list-wrapper">
+
+
+        <div class="project-list pb-5">
+            <div class="" style="padding: 37px 10px">
+                <h2 class="text-center">Companies catalog</h2>
+            </div>
+            <div class="container">
+                <div class="row g-3">
+                    @foreach (var data in @cso)
+                    {
+
+
+                        <div class="col-sm-12 col-md-6 col-lg-4 custom-card-width">
+                            <div class="card card-vertical" data-item-id="@data.emailId">
+                                <div class="card-image multiple-image">
+                                    <img src="/Assets/images/circle-of-love.png" alt="" />
+                                    <img src="/Assets/images/circle-of-love.png" alt="" />
+                                    <img src="/Assets/images/circle-of-love.png" alt="" />
+                                    <img src="/Assets/images/circle-of-love.png" alt="" />
+                                </div>
+                                <div class="card-details">
+                                    <h3 class="card-title">
+                                        @data.csoName
+                                    </h3>
+
+                                    <div class="extra-details">
+                                        @data.description
+                                    </div>
+
+                                    <h5 class="caption">
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </section>
