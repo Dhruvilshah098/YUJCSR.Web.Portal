@@ -4,7 +4,7 @@
     Layout = "_Layout";
 }
 @{
-    var cso = ViewBag.CSO;
+    var company = ViewBag.Company;
 }
 <section>
     <div class="project-list-wrapper">
@@ -16,12 +16,12 @@
             </div>
             <div class="container">
                 <div class="row g-3">
-                    @foreach (var data in @cso)
+                    @foreach (var data in @company)
                     {
 
 
                         <div class="col-sm-12 col-md-6 col-lg-4 custom-card-width">
-                            <div class="card card-vertical" data-item-id="@data.emailId">
+                            <div class="card card-vertical" data-item-id="@data.emailID">
                                 <div class="card-image multiple-image">
                                     <img src="/Assets/images/circle-of-love.png" alt="" />
                                     <img src="/Assets/images/circle-of-love.png" alt="" />
@@ -30,11 +30,11 @@
                                 </div>
                                 <div class="card-details">
                                     <h3 class="card-title">
-                                        @data.csoName
+                                        @data.companyName
                                     </h3>
 
                                     <div class="extra-details">
-                                        @data.description
+                                        @data.contactDetails
                                     </div>
 
                                     <h5 class="caption">

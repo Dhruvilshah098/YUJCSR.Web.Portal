@@ -50,10 +50,10 @@ namespace YUJCSR.Web.Portal.Controllers
         }
         public IActionResult Companies()
         {
-            CSOManager obj = new CSOManager(_config);
-            var list = obj.GetCSO();
+            CompanyManager obj = new CompanyManager(_config);
+            var list = obj.GetCompany();
             //var list = (APIResponse)data.Result;
-            ViewBag.CSO = list;
+            ViewBag.Company = list;
             return View();
         }
 
